@@ -1,0 +1,91 @@
+// importing bourbon
+@import "bourbon/bourbon"
+// initial reset
+*
+  margin: auto
+  padding: 0
+body
+  font-family: 'Varela Round', sans-serif
+  header
+    background: rgba(226, 226, 226, 0.3)
+    padding: 20px
+    text-align: center
+    h1
+      font-weight: normal
+      color: #696969
+  .container
+    position: relative
+    background: rgba(234, 224, 224, 0.43)
+    @include size(300px 240px)
+    margin: 5px
+    // padding: 10px
+    h2
+      background: cornflowerblue
+      padding: 10px
+      text-align: center
+      color: aliceblue
+      font-size: 16px
+      font-weight: normal
+    .characters
+      list-style-type: none
+      li
+        display: inline-block
+        font-size: 24px
+        margin: 10px
+        padding: 10px
+      >li:nth-child(1)
+        position: absolute
+        top: 44px
+        left: 0
+      >li:nth-child(2)
+        position: absolute
+        top: 44px
+        left: 0
+        opacity: 0
+        // -webkit-animation: transfering 5s infinite
+        // animation: transfering 5s infinite
+        // display: none
+      >li:nth-child(3)
+        position: absolute
+        top: 44px
+        right: 0
+    .ctrl
+      list-style-type: none
+      text-align: center
+      position: relative
+      top: 140px
+      li
+        display: inline-block
+        background: cornflowerblue
+        padding: 8px 20px
+        border-radius: 4px
+        a
+          text-decoration: none
+          color: aliceblue
+.animate
+  display: inline-block
+  -webkit-animation: transfering 2s infinite
+  animation: transfering 2s infinite
+// ................... ANIMATIONS ..........................
+@-webkit-keyframes transfering
+  0%
+    transform: translateX(12px)
+    transition: transform ease 0.5s
+    // opacity: 0
+  25%, 50%, 75%
+    opacity: 1
+  100%
+    transform: translateX(236px)
+    transition: transform ease 0.5s
+    opacity: 0
+@keyframes transfering
+  0%
+    transform: translateX(12px)
+    transition: transform ease 0.5s
+    // opacity: 0
+  25%, 50%, 75%
+    opacity: 1
+  100%
+    transform: translateX(236px)
+    transition: transform ease 0.5s
+    opacity: 0

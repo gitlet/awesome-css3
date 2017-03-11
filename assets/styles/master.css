@@ -1,0 +1,87 @@
+* {
+  margin: auto;
+  padding: 0; }
+
+body {
+  font-family: "Varela Round", sans-serif; }
+  body header {
+    background: rgba(226, 226, 226, 0.3);
+    padding: 20px;
+    text-align: center; }
+    body header h1 {
+      font-weight: normal;
+      color: #696969; }
+  body .container {
+    position: relative;
+    background: rgba(234, 224, 224, 0.43);
+    height: 240px;
+    width: 300px;
+    margin: 5px; }
+    body .container h2 {
+      background: cornflowerblue;
+      padding: 10px;
+      text-align: center;
+      color: aliceblue;
+      font-size: 16px;
+      font-weight: normal; }
+    body .container .characters {
+      list-style-type: none; }
+      body .container .characters li {
+        display: inline-block;
+        font-size: 24px;
+        margin: 10px;
+        padding: 10px; }
+      body .container .characters > li:nth-child(1) {
+        position: absolute;
+        top: 44px;
+        left: 0; }
+      body .container .characters > li:nth-child(2) {
+        position: absolute;
+        top: 44px;
+        left: 0;
+        opacity: 0; }
+      body .container .characters > li:nth-child(3) {
+        position: absolute;
+        top: 44px;
+        right: 0; }
+    body .container .ctrl {
+      list-style-type: none;
+      text-align: center;
+      position: relative;
+      top: 140px; }
+      body .container .ctrl li {
+        display: inline-block;
+        background: cornflowerblue;
+        padding: 8px 20px;
+        border-radius: 4px; }
+        body .container .ctrl li a {
+          text-decoration: none;
+          color: aliceblue; }
+
+.animate {
+  display: inline-block;
+  -webkit-animation: transfering 2s infinite;
+  animation: transfering 2s infinite; }
+
+@-webkit-keyframes transfering {
+  0% {
+    transform: translateX(12px);
+    transition: transform ease 0.5s; }
+  25%, 50%, 75% {
+    opacity: 1; }
+  100% {
+    transform: translateX(236px);
+    transition: transform ease 0.5s;
+    opacity: 0; } }
+@keyframes transfering {
+  0% {
+    transform: translateX(12px);
+    transition: transform ease 0.5s; }
+  25%, 50%, 75% {
+    opacity: 1; }
+  100% {
+    transform: translateX(236px);
+    transition: transform ease 0.5s;
+    opacity: 0; } }
+
+/*# sourceMappingURL=master.css.map */
