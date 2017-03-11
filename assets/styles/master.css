@@ -15,7 +15,7 @@ body {
     position: relative;
     background: rgba(234, 224, 224, 0.43);
     height: 240px;
-    width: 300px;
+    width: auto;
     margin: 5px; }
     body .container h2 {
       background: cornflowerblue;
