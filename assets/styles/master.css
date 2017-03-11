@@ -65,22 +65,30 @@ body {
 
 @-webkit-keyframes transfering {
   0% {
+    -webkit-transform: translateX(12px);
     transform: translateX(12px);
+    -webkit-transition: transform ease 0.5s;
     transition: transform ease 0.5s; }
   25%, 50%, 75% {
     opacity: 1; }
   100% {
+    -webkit-transform: translateX(236px);
     transform: translateX(236px);
+    -webkit-transition: transform ease 0.5s;
     transition: transform ease 0.5s;
     opacity: 0; } }
 @keyframes transfering {
   0% {
+    -webkit-transform: translateX(12px);
     transform: translateX(12px);
+    -webkit-transition: transform ease 0.5s;
     transition: transform ease 0.5s; }
   25%, 50%, 75% {
     opacity: 1; }
   100% {
+    -webkit-transform: translateX(236px);
     transform: translateX(236px);
+    -webkit-transition: transform ease 0.5s;
     transition: transform ease 0.5s;
     opacity: 0; } }
 
